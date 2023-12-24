@@ -1,4 +1,8 @@
-var password = prompt('Please enter the password to view this page', '');
-if (password != 'yourpassword') {
-    window.location.href = 'https://example.com'; // redirect to another page if the password is wrong
+function checkPassword() {
+    var password = prompt("Please enter the password to view this album:", "");
+    if (password == "yourPassword") {
+        document.getElementById('content').style.display = 'block';
+    } else {
+        document.body.innerHTML = "<h2>Incorrect password. Access denied.</h2>";
+    }
 }
