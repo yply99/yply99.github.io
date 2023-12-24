@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Photo Album</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Album</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="checkPassword()">
+    <div id="content" style="display:none;">
+        <h1>Welcome to My Personal Album</h1>
+        <div class="gallery">
+            <img src="images/photo1.jpg" alt="Photo 1">
+            <img src="images/photo2.jpg" alt="Photo 2">
+            <!-- Add more images here -->
+        </div>
+    </div>
     <script src="script.js"></script>
-    <h1>Welcome to My Photo Album</h1>
-    <!-- Add your photo gallery HTML here -->
 </body>
 </html>
